@@ -6,7 +6,6 @@ body{
 	padding:0;
     box-sizing: border-box;
     font-size: 1.1em;
-    background: rgb(228, 18, 18);
     height: 250vh;
 	
 }
@@ -38,6 +37,11 @@ body{
 	display:flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.btn-action{
+	margin-top:1rem;
 }
 
 div.myAmount#budgetDisplay {     
