@@ -1,0 +1,84 @@
+o
+
+
+body{
+	margin:0;
+	padding:0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    background-color: aliceblue;
+    height: 250vh;
+}
+
+.budget-one{
+    background-color:rgb(245, 240, 235);
+    display: none;
+    
+
+}
+
+.list{
+    background:azure;
+}
+
+.my_amount_all{
+    background-color: bisque;
+    display: none;
+}
+
+
+#checkclass,
+#mybalance{
+    display: none;
+}
+
+
+div.myAmount#budgetDisplay {     
+	display: none; 
+	}  
+
+
+.list{
+    display: none;
+}
+
+#hide-budget{
+    display: none;
+}
+
+.res-div{
+	margin-top:1.4rem;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.items-amt{
+	background-color: pink;
+	padding:.1rem .5rem;
+	border-radius: 10px;
+}
+
+.res-div-2{
+	border-radius:10px;
+	padding:.5rem;
+}
+.total-spent-section{
+    background-color:thistle;
+	
+}
+
+.amt-left-section{
+	 background-color:greenyellow;
+}
+
+.response{
+	color:green;
+	font-size: 1rem;
+}
+
+.response.error{
+	color:red;
+}
