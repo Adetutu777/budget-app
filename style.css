@@ -6,8 +6,9 @@ body{
 	padding:0;
     box-sizing: border-box;
     font-size: 1.1em;
-    background-color: aliceblue;
+    background: rgb(228, 18, 18);
     height: 250vh;
+	
 }
 
 .budget-one{
@@ -32,6 +33,12 @@ body{
     display: none;
 }
 
+
+.duo-btn{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
 div.myAmount#budgetDisplay {     
 	display: none; 
