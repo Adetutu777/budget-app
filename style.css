@@ -40,8 +40,9 @@ body{
 	flex-wrap: wrap;
 }
 
-.btn-action{
+button.btn-action{
 	margin-top:1rem;
+	outline:1px solid red;
 }
 
 div.myAmount#budgetDisplay {     
