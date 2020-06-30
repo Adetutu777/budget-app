@@ -10,6 +10,7 @@ const btnOne = document.getElementById('mysubmitbtn-one'),
  myAmountSpent = document.getElementById('myAmountSpent'),
   totalUserSpent = document.getElementById('spent-section'),
   amountLeft = document.getElementById('amt-left-section'),
+  enterBudget = document.getElementById('enter-budget'),
   inputResponse = document.getElementById('resp-noti');
 	
 
@@ -22,6 +23,7 @@ let error = false
 let addToList = [];
 
 let budgetUI =()=>{
+   enterBudget.style.display = 'none';
    budgetDisplay.style.display = 'inline-block';
    hideBudget.style.display = 'block';
    checkclass.style.display='block';
@@ -30,16 +32,44 @@ let budgetUI =()=>{
 	
 }
 
-let sum = 0 ;
+
+
+// 	let sum = 	myAmountSpent.value;
+
+
 let totalSpent=()=>
 
 {
-
-	for(let i= 0; i < addToList.length; i++) 
-		{  
-	sum += parseInt(addToList[i].AmtVal);      	
-		}
+	// for(let i= 0; i < addToList.length; i++) 
+	// 	{  
+	// sum += parseInt(addToList[0].AmtVal);      	
+	// 	}
+		
 }
+// let totalSpent=()=>
+// {
+// 	for(let i= 0; i < addToList.length; i++) 
+// 		{  
+// 	sum += parseInt(addToList[i].AmtVal);      	
+// 		}
+// }
+
+// let val =[]
+// let sum;
+// let totalSpent=()=> {
+// 	val.splice(0,1)
+// for (i =0; i <addToList.length; i++){
+//     val.push( addToList[i].AmtVal) 
+// }
+
+//  sum = val.reduce((t, a) => t + a);
+//  //let p = parseInt(sum)
+// // sum =p;
+//   console.log('sum', sum)
+//   console.log('val', val)
+// }
+
+
 
 let UpdateUI =()=>{
   AddItems();
@@ -58,11 +88,10 @@ let UpdateUI =()=>{
  
  let reloadFunc = () => location.reload();
 
-
+let val = [] ;
  function AddItems() {
    let TxtVal = todoDescription.value;
    let AmtVal = myAmountSpent.value;
-   
      if(AmtVal.length >0 && TxtVal.length > 0) { 
 			 error = false;
     addToList.push({
@@ -70,6 +99,9 @@ let UpdateUI =()=>{
     TxtVal,
     });  
   responseUI();
+	let numVal = parseInt(AmtVal) 
+	val.push(numVal)
+	sum = val.reduce((t, a) => t + a);
     } else{
 			error = true;
 		  responseUIErr();
@@ -101,7 +133,15 @@ let itemUI = () => {
 itemSection.innerHTML = res.join('');
 };
 
+
+
+
 	let totalSpentUI =()=>{
+	// sum = 	parseInt(myAmountSpent.value);
+  // console.log('first sum', sum)
+//	 sum = summary + sum;
+//	 console.log('scd summ', sum)
+
 		resu = (
 
 		  `<div class='res-div res-div-2 total-spent-section'>
@@ -117,12 +157,12 @@ itemSection.innerHTML = res.join('');
       </div>`
 		)
 	totalUserSpent.innerHTML = resu;
+
 	}
 
 	let amountLeftUI =()=>{
 	let budVal = myBudget.value
 	 let newBudVal = parseInt(budVal);
-
 		result = (
 
 		  `<div class='res-div res-div-2 amt-left-section'>
