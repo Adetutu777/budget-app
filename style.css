@@ -4,10 +4,13 @@ body{
 	padding:0;
     box-sizing: border-box;
     font-size: 1.1em;
-    height: 250vh;
 		background: aliceblue;
+ height: 250vh;
 	
 }
+
+  /* height: 100vh; */
+
 
 .budget-one{
     background-color:rgb(245, 240, 235);
