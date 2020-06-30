@@ -33,44 +33,6 @@ let budgetUI =()=>{
 }
 
 
-
-// 	let sum = 	myAmountSpent.value;
-
-
-let totalSpent=()=>
-
-{
-	// for(let i= 0; i < addToList.length; i++) 
-	// 	{  
-	// sum += parseInt(addToList[0].AmtVal);      	
-	// 	}
-		
-}
-// let totalSpent=()=>
-// {
-// 	for(let i= 0; i < addToList.length; i++) 
-// 		{  
-// 	sum += parseInt(addToList[i].AmtVal);      	
-// 		}
-// }
-
-// let val =[]
-// let sum;
-// let totalSpent=()=> {
-// 	val.splice(0,1)
-// for (i =0; i <addToList.length; i++){
-//     val.push( addToList[i].AmtVal) 
-// }
-
-//  sum = val.reduce((t, a) => t + a);
-//  //let p = parseInt(sum)
-// // sum =p;
-//   console.log('sum', sum)
-//   console.log('val', val)
-// }
-
-
-
 let UpdateUI =()=>{
   AddItems();
 	todoDescription.value ='';
@@ -79,7 +41,6 @@ let UpdateUI =()=>{
 		responseUIErr()
 	} else{
   itemUI();
-	totalSpent();
 	totalSpentUI();
 	amountLeftUI();
 	}
@@ -137,10 +98,6 @@ itemSection.innerHTML = res.join('');
 
 
 	let totalSpentUI =()=>{
-	// sum = 	parseInt(myAmountSpent.value);
-  // console.log('first sum', sum)
-//	 sum = summary + sum;
-//	 console.log('scd summ', sum)
 
 		resu = (
 
