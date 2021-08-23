@@ -21,7 +21,9 @@ body{
     
 
 }
-
+/* input[required]{
+	background: rebeccapurple;
+} */
 .list{
     background:azure;
 }
