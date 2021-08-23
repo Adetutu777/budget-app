@@ -151,7 +151,7 @@ let responseUIErr =()=>{
 
 	myRes = (
 		  `<div class='response error'>
-			<span>All fields are requirred to proceed </span>
+			<span>All fields are required to proceed </span>
       </div>`
 		)
 

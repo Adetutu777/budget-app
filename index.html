@@ -6,6 +6,7 @@
     <title>Budget App</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -15,7 +16,7 @@
   <body>
 
 
-    <h1 class="has-text-centered is-size-2 has-text-weight-bold is-info my-3 mt-2">MY BUDGET APP</h1>
+    <h1 class="has-text-centered is-size-3 has-text-weight-bold is-info my-3 mt-2 pt-4">MY BUDGET APP</h1>
   
     <section>
 <div class="mx-6 columns verify-all">
@@ -23,8 +24,7 @@
 <div id = 'enter-budget'>
         <div class="field">
             <label class="label is-size-4">Whats your budget</label>
-            <div class="control">
-              <input class="input" type="text" id="myBudget" placeholder="Enter your budget">
+            <div class="control"> <input class="input" type="number" id="myBudget" placeholder="e.g $2000" required>
             </div>
           </div>
 			
@@ -50,7 +50,7 @@
             <div class="totalbalance" id="mybalance">
             <label class="label is-size-4" id="checkBalance">Amount to be spent</label>
             <div class="control">
-              <input class="input" type="text" id="myAmountSpent" placeholder="Enter amount">
+              <input class="input" type="text" id="myAmountSpent" placeholder="e.g $400">
             </div>
           
             <div class="checkbutton duo-btn">
@@ -67,7 +67,7 @@
 
 <div id="hide-budget"> 
 <h2 class="has-text-weight-bold is-size-4"> List </h2>
-  <p class="has-text-weight-semibold is-size-6">Budget amount: ₦<span id ='budgetDisplay'></span>
+  <p class="has-text-weight-semibold is-size-6">Budget amount: $<span id ='budgetDisplay'></span>
   </p>
 	</div>
 
@@ -85,7 +85,8 @@
 
     </section>
 
-
+    <script src="/vendors/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="/vendors/formvalidation/dist/js/plugins/Bulma.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
