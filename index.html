@@ -16,18 +16,18 @@
   <body>
 
 
-    <h1 class="has-text-centered is-size-3 has-text-weight-bold is-info my-3 mt-2 pt-4">MY BUDGET APP</h1>
+    <h1 class="bg-app has-text-centered is-size-3 has-text-weight-bold my-3 mt-2 pt-4">MY BUDGET APP</h1>
   
     <section>
 <div class="mx-6 columns verify-all">
     <div class="column">
 <div id = 'enter-budget'>
         <div class="field">
-            <label class="label is-size-4">Whats your budget</label>
+            <label class="bg-app label is-size-4">Whats your budget</label>
             <br />
             <span id='home-noti'>
             </span>
-            <div class="control"> <input class="input" type="number" id="myBudget" placeholder="e.g $2000" requiredfinput>
+            <div class="control"> <input class="input" type="number" id="myBudget" placeholder="e.g $2000" required>
             </div>
           </div>
 			
@@ -37,7 +37,7 @@
 		 </div>
           <div class="field is-size-3 describebudget mt-5">
             <div class="classcheck" id="checkclass">
-            <label class="label is-size-4 " id="checkDescription">
+            <label class="label is-size-4 bg-app " id="checkDescription">
 							Expenses description
 							<br />
 							<span id ='resp-noti'> 
@@ -51,7 +51,7 @@
 
           <div class="field describebudget-two">
             <div class="totalbalance" id="mybalance">
-            <label class="label is-size-4" id="checkBalance">Amount to be spent</label>
+            <label class="bg-app label is-size-4" id="checkBalance">Amount to be spent</label>
             <div class="control">
               <input class="input" type="number" id="myAmountSpent" placeholder="e.g $400">
             </div>
@@ -69,12 +69,12 @@
 <div class="column myAmount">
 
 <div id="hide-budget"> 
-<h2 class="has-text-weight-bold is-size-4"> List </h2>
-  <p class="has-text-weight-semibold is-size-6">Budget amount: $<span id ='budgetDisplay'></span>
+<h2 class="bg-app has-text-weight-bold is-size-4"> List </h2>
+  <p class="bg-app has-text-weight-semibold is-size-6">Budget amount: $<span id ='budgetDisplay'></span>
   </p>
 	</div>
 
- <div id='item-section'>
+ <div class="bg-app" id='item-section'>
   </div>
  <div class="" id='spent-section'>
   </div>

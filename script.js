@@ -28,7 +28,8 @@ let budgetUI =()=>{
    hideBudget.style.display = 'block';
    checkclass.style.display='block';
    mybalance.style.display='block';
-   budgetDisplay.innerHTML=myBudget.value;
+  budgetDisplay.innerHTML = myBudget.value;
+  
 	
 }
 
